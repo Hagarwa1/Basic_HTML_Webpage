@@ -27,16 +27,16 @@
 		<p>
 			To know more about Buddha's principle <a href="https://www.thebuddhistsociety.org/page/fundamental-teachings">Click Here</a>
 		</p>
-			<button onclick="changeText()">Change Intro Text</button>
+			<button onclick="changeText()">Change Intro Text</button> <!--Added button to changed the first qoute-->
 	<script>
-			alert("Welcome to the World of Buddha");
+			alert("Welcome to the World of Buddha");// Added an alert which pops up when page is loaded
 			
-			var h = document.getElementById("heading");
+			var h = document.getElementById("heading"); // Changed the heading color to red
 			h.setAttribute("style","color:red");
 
 			function changeText() {
             		var p = document.getElementById("intro");
-            		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world.";
+            		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world."; //This function changes the 1st quote upon clicking the changeText button
         		}
 	</script>
 	</body>
