@@ -28,9 +28,17 @@
 			To know more about Buddha's principle <a href="https://www.thebuddhistsociety.org/page/fundamental-teachings">Click Here</a>
 		</p>	
 	<script>
+			<button onclick="changeText()">Change Intro Text</button>
+			
 			alert("Welcome to the World of Buddha");
+			
 			var h = document.getElementById("heading");
 			h.setAttribute("style","color:red");
+
+			function changeText() {
+            		var p = document.getElementById("intro");
+            		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world.";
+        		}
 	</script>
 	</body>
 </html>
