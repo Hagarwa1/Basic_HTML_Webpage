@@ -35,20 +35,17 @@
 			h.setAttribute("style","color:red");
 		
 			//This function changes the 1st quote upon clicking the changeText button
-			function changeText() {
+			function changeText()
+				{
             		var p = document.getElementById("intro");
             		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world."; 
-        		}
-
-			 // Get the text element
+        			}
     			const textElement = document.getElementById("link");
-
-    			// Add event listeners for mouseover and mouseout events
+			// Added color changing feature on mouse over
     			textElement.addEventListener('mouseover', function() {
-        		textElement.style.color = 'green';  // Change color on mouseover
+        		textElement.style.color = 'green';
     			});
-
-    			textElement.addEventListener('mouseout', function() {
+			textElement.addEventListener('mouseout', function() {
         		textElement.style.color = 'black';  // Change color back on mouseout
 			});	
 	</script>
