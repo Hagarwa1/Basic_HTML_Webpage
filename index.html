@@ -33,11 +33,23 @@
 			
 			var h = document.getElementById("heading"); // Changed the heading color to red
 			h.setAttribute("style","color:red");
+		
 			//This function changes the 1st quote upon clicking the changeText button
 			function changeText() {
             		var p = document.getElementById("intro");
             		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world."; 
         		}
-	</script>
+
+			 // Get the text element
+    			const textElement = document.getElementsByClassName('menu-bar');
+
+    			// Add event listeners for mouseover and mouseout events
+    			textElement.addEventListener('mouseover', function() {
+        		textElement.style.color = 'green';  // Change color on mouseover
+    			});
+
+    			textElement.addEventListener('mouseout', function() {
+        		textElement.style.color = 'black';  // Change color back on mouseout
+			</script>
 	</body>
 </html>
