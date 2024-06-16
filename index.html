@@ -34,19 +34,19 @@
 			var h = document.getElementById("heading"); // Changed the heading color to red
 			h.setAttribute("style","color:red");
 		
-			//This function changes the 1st quote upon clicking the changeText button
+			//This function changes the 1st quote upon clicking the button
 			function changeText()
 				{
             		var p = document.getElementById("intro");
             		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world."; 
         			}
-    			const textElement = document.getElementById("link");
-			// Added color changing feature on mouse over
-    			textElement.addEventListener('mouseover', function() {
-        		textElement.style.color = 'green';
+    			const linkcolor = document.getElementById("link");
+			// Added color changing feature to green on mouse over and back to black on mouse out
+    			linkcolor.addEventListener('mouseover', function() {
+        		linkcolor.style.color = 'green';
     			});
-			textElement.addEventListener('mouseout', function() {
-        		textElement.style.color = 'black';  // Change color back on mouseout
+			linkcolor.addEventListener('mouseout', function() {
+        		linkcolor.style.color = 'black';
 			});	
 	</script>
 	</body>
