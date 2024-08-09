@@ -25,7 +25,7 @@
 			We can follow the path of the Buddha, as long as we are willing to make the necessary effort. As the Buddha said:<br> “You yourselves must strive, the Buddhas only point the way”
 		</p>
 		<p>
-			To know more about Buddha's principle <a id="link" href="https://www.thebuddhistsociety.org/page/fundamental-teachings">Click Here</a>
+			To know more about Buddha's principle <a id="link" onmouseover="this.setAttribute('style', 'color: green');" onmouseout="this.setAttribute('style', 'color: black');" href="https://www.thebuddhistsociety.org/page/fundamental-teachings">Click Here</a>
 		</p>
 			<button onclick="changeText()">Change 1st Quote</button> <!--Added button to changed the first qoute-->
 	<script>
@@ -40,14 +40,14 @@
             		var p = document.getElementById("intro");
             		p.textContent = "The Buddha's teachings have shaped the spiritual landscape of many cultures and continue to inspire millions around the world."; 
         			}
-    			const linkcolor = document.getElementById("link");
+    			//const linkcolor = document.getElementById("link");
 			// Added color changing feature to green on mouse over and back to black on mouse out
-    			linkcolor.addEventListener('mouseover', function() {
-        		linkcolor.style.color = 'green';
-    			});
-			linkcolor.addEventListener('mouseout', function() {
-        		linkcolor.style.color = 'black';
-			});	
+    			//linkcolor.addEventListener('mouseover', function() {
+        		//linkcolor.style.color = 'green';
+    			//});
+			//linkcolor.addEventListener('mouseout', function() {
+        		//linkcolor.style.color = 'black';
+			//});	
 	</script>
 	</body>
 </html>
